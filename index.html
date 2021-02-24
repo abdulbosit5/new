@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lesson 24</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-header text-center">
+              <h4>Talaba qo'shish</h4>
+            </div>
+            <form name="myform">
+              <div class="card-body">
+                <input
+                  type="text"
+                  required
+                  placeholder="Ismi"
+                  name="fname"
+                  class="form-control my-2"
+                />
+                <input
+                  type="text"
+                  required
+                  placeholder="Familiyasi"
+                  name="lname"
+                  class="form-control my-2"
+                />
+                <input
+                  type="number"
+                  required
+                  placeholder="Yoshi"
+                  name="age"
+                  class="form-control my-2"
+                />
+                <input
+                  type="text"
+                  required
+                  placeholder="Gruxi"
+                  name="group"
+                  class="form-control my-2"
+                />
+              </div>
+              <div class="card-footer">
+                <button
+                  type="button"
+                  onclick="addGroup()"
+                  class="btn btn-outline-primary btn-block"
+                >
+                  qoshish
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <table class="table border table-striped">
+            <thead>
+              <tr>
+                <th>TR</th>
+                <th>Ismi</th>
+                <th>Familiyasi</th>
+                <th>Yoshi</th>
+                <th>Guruhi</th>
+                <th>action</th>
+              </tr>
+            </thead>
+            <tbody id="gruxnomi"></tbody>
+          </table>
+        </div>
+      </div>
+      <form name="newExample">
+        <input type="number" name="exampleNumber" />
+        <button onclick="getNewExample()" id="btn-example">calculate</button>
+      </form>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/src/popover.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
